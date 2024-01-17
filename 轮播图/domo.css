@@ -1,0 +1,96 @@
+/* *{
+padding: 0;
+margin: 0;
+} */
+
+/* 相框样式 */
+.turn-img{
+    height: 640px;
+    width: 1000px;
+    position: relative;
+}
+
+/* 分清楚标签嵌套时.和>的区别 */
+/* 图片盒子样式 */
+.turn-img .img{    
+    height:640px;
+    width: 1000px;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;  /*所有图片都隐藏*/
+    transition: opacity 1.5s;
+    
+}
+/* 默认显示第一张图片 */
+.turn-img .img:nth-child(1){
+    opacity: 1;
+}
+
+/* 左箭头样式 */
+.turn-img .left_turn{
+    position: absolute;
+    background-color: azure;
+    color: dodgerblue;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    top: 290px;
+    font-size: 25px;
+}
+.turn-img .left_turn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* 右箭头样式 */
+.turn-img .right_turn{
+    position: absolute;
+    background-color: azure;
+    color: dodgerblue;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+    top: 290px;
+    font-size: 25px;
+    right: 0px;
+}
+.turn-img .right_turn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* 小圆点图片定位 */
+.turn-img .turn-bottom>ul{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    bottom:100px;
+    right: 200px;
+}
+
+
+/* 小圆点样式 */
+.turn-img .turn-bottom>ul>li{
+    height: 40px;
+    width: 40px;
+    float: left;
+    background-color: rgb(79, 169, 238);
+    opacity: 0.6;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+    margin-left: 20px;
+    
+}
+.turn-img .turn-bottom>ul>li:hover{
+    opacity: 1;
+}

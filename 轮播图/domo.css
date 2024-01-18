@@ -43,6 +43,7 @@ margin: 0;
 .turn-img .left_turn:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 /* 右箭头样式 */
@@ -62,6 +63,8 @@ margin: 0;
 .turn-img .right_turn:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
+
 }
 
 /* 小圆点图片定位 */
@@ -93,4 +96,6 @@ margin: 0;
 }
 .turn-img .turn-bottom>ul>li:hover{
     opacity: 1;
+    cursor: pointer;
+
 }

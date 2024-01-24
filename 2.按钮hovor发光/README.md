@@ -2,7 +2,7 @@
 
 > 使用原生css完成特效
 
-> html内部盒子结构：![image-20240124105121796](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124105121796.png)
+> html内部盒子结构：![请添加图片描述](https://img-blog.csdnimg.cn/direct/950a32988ea5407e89b1ebee789633d2.png)
 
 ### 制作过程
 
@@ -24,7 +24,7 @@
 
 #### 0.确认思路
 
-![image-20240124102349633](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124102349633.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/45a6d86cf83b4fee88222a8aa541f6b1.png)
 
 使用ul和li来实现这样的一个横向列表，通过为按钮边框以及按钮内部的内容都加上阴影来实现鼠标移动到按钮上产生这样的特效
 
@@ -46,31 +46,31 @@
 
 1.定位ul
 
-![image-20240124105007984](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124105007984.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/91f729652d384cb58678876df3e98ee6.png)
 
 2.定位li
 
-![image-20240124105019357](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124105019357.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/fe0c29a271054bf38abf0526ca4f4f8b.png)
 
 #### 3.加上before伪类
 
 > 在伪类身上实现边框特效，以及大小变化的动画
 
-![image-20240124105720555](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124105720555.png)
+![image-20240124105720555](https://img-blog.csdnimg.cn/direct/ab0f119fc18c4298847131bcbc08f5f9.png)
 
 #### 4.加hover特效
 
 1.bili图标（svg图片）
 
-![image-20240124110804463](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124110804463.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/1bf9839946364458bfbed8cbec3e241c.png)
 
 2.剩余四个图标（类似于字符）
 
-![image-20240124110906025](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124110906025.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/bb83a94e23f343418e80d7616bd8d116.png)
 
 3.边框放大和蓝色阴影
 
-![image-20240124110955837](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124110955837.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/fe9bd12e7e70439bb22b2f5266e97274.png)
 
 #### *5.简化思路
 
@@ -78,13 +78,13 @@
 
 做法：去掉所有before伪类相关的代码，并进行以下修改:(将注释掉的部分加上)
 
-![image-20240124111611418](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124111611418.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/07496e74de33477392eef5a3653bfb5a.png)
 
-![image-20240124111552480](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124111552480.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/d7fef2540dd44dbd90fc1b84c552ae1c.png)
 
 > 若在使用本方案的同时不去掉所有before伪类相关的代码，由于伸缩倍数不同，将会产生双层边框的效果：
 >
-> ![image-20240124112026274](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124112026274.png)
+> ![请添加图片描述](https://img-blog.csdnimg.cn/direct/fb167614227b4c93b5515882acdb2324.png)
 
 ### 总结与收获
 
@@ -96,11 +96,11 @@
 
 4.伪类之间不能有空格，伪类与元素间必须有空格
 
-![image-20240124112640687](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124112640687.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/f60feb9dc5a248778d4e1b329fa1330b.png)
 
-![image-20240124112624951](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124112624951.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/direct/866cb90e651142b2853d3daa56c3aad3.png)
 
-5.![image-20240124112723456](C:\Users\17410\AppData\Roaming\Typora\typora-user-images\image-20240124112723456.png)
+5.![请添加图片描述](https://img-blog.csdnimg.cn/direct/e954157903bc4e53af40f78a617f274c.png)
 
 
 

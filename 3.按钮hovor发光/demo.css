@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /*以此来代替‘%’*/
+    height: 100vh;
+    background-color: #2c3a47;
+    z-index: -10;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    width: 525px;
+
+}
+
+ul li {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 65px;
+    margin: 0 20px;
+    height: 65px;
+}
+
+li a {
+    position: relative;
+    display: block;
+    height: 65px;
+    width: 65px;
+    color: white;
+    font-size: 35px;
+    transition: all 0.6s;
+    border-radius: 50%;
+    line-height: 65px;
+    text-align: center;
+    background: #2c3a47;
+    transition: all 0.6s;
+
+}
+
+li a::before {
+    content: "";
+    /*绝对定位的父盒子加上相对定位，不然直接作用到body*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    /* 将伪类大小变为原来的0.8倍 */
+    transform: scale(0.8); 
+    transition: all 0.6s;
+}
+
+li a:hover::before {
+    box-shadow: 0 0 15px 2px #25ccf7;
+    transform: scale(1.1);
+}
+
+li a:hover {
+    text-shadow: 0 0 4px #25ccf7;
+    box-shadow: 0 0 15px 2px #25ccf7;
+    transform: scale(1.05);
+}
+
+
+
+.bili {
+    transition: all 0.6s;
+    /* 反转输入图像,这里参数设置为1,则将图像完全反转 */
+    /* ,图像原为黑色,通过此属性将其转为白色 */
+    filter: invert(1); 
+}
+
+li a:hover .bili {
+    /*伪类之间不能有空格，伪类与元素间必须有空格*/
+    filter: invert(1) drop-shadow(0 0 2px rgb(37, 204, 247));
+}
